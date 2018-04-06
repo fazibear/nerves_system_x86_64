@@ -1,10 +1,8 @@
 defmodule NervesSystemX8664.MixProject do
   use Mix.Project
 
-  @app :nerves_system_x86_64
-  @version Path.join(__DIR__, "VERSION")
-           |> File.read!()
-           |> String.trim()
+  @app :nerves_system_xorg_x86_64
+  @version "0.9"
 
   def project do
     [
@@ -34,9 +32,9 @@ defmodule NervesSystemX8664.MixProject do
   defp nerves_package do
     [
       type: :system,
-      artifact_sites: [
-        {:github_releases, "nerves-project/#{@app}"}
-      ],
+      # artifact_sites: [
+      #   {:github_releases, "fazibear/#{@app}"}
+      # ],
       platform: Nerves.System.BR,
       platform_config: [
         defconfig: "nerves_defconfig"
