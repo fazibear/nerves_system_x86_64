@@ -2,7 +2,7 @@ defmodule NervesSystemX8664.MixProject do
   use Mix.Project
 
   @app :nerves_system_xorg_x86_64
-  @version "0.9"
+  @version "0.1.0"
 
   def project do
     [
