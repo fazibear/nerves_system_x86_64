@@ -1,4 +1,4 @@
-# Generic x86_64 System
+# [WIP] Generic x86_64 System with XORG
 
 [![CircleCI](https://circleci.com/gh/nerves-project/nerves_system_x86_64/tree/master.svg?style=svg)](https://circleci.com/gh/nerves-project/nerves_system_x86_64/tree/master)
 [![Hex version](https://img.shields.io/hexpm/v/nerves_system_x86_64.svg "Hex version")](https://hex.pm/packages/nerves_system_x86_64)
