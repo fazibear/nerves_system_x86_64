@@ -62,6 +62,6 @@ defmodule Example.MixProject do
     ] ++ system(target)
   end
 
-  defp system("x86_64"), do: [{:kiosk_system_x86_64, path: "../", runtime: false}]
+  defp system("x86_64"), do: [{:nerves_system_xorg_x86_64, path: "../", runtime: false}]
   defp system(target), do: Mix.raise("Unknown MIX_TARGET: #{target}")
 end
