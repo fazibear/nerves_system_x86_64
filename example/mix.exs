@@ -48,8 +48,7 @@ defmodule Example.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:nerves, "~> 1.0-rc", runtime: false},
-      {:ring_logger, "~> 0.4"}
+      {:nerves, "~> 1.0-rc", runtime: false}
     ] ++ deps(@target)
   end
 

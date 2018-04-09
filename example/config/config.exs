@@ -23,11 +23,4 @@ config :nerves_firmware_ssh,
     File.read!(Path.join(System.user_home!(), ".ssh/id_rsa.pub"))
   ]
 
-# Add the LoggerCircularBuffer backend. This removes the
-# default :console backend.
-config :logger, backends: [RingLogger]
-
-# Set the number of messages to hold in the circular buffer
-config :logger, RingLogger, buffer_size: 100
-
 # import_config "#{Mix.Project.config[:target]}.exs"
