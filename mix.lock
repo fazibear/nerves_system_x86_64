@@ -6,5 +6,6 @@
   "nerves_system_br": {:hex, :nerves_system_br, "1.0.0-rc.3", "e99389929f21e9ee7575a02917195ba875f38f458f64817adef606295d399b05", [:mix], []},
   "nerves_system_linter": {:hex, :nerves_system_linter, "0.3.0", "84e0f63c8ac196b16b77608bbe7df66dcf352845c4e4fb394bffd2b572025413", [:mix], []},
   "nerves_toolchain_ctng": {:hex, :nerves_toolchain_ctng, "1.4.0-rc.0", "1766752c2a854af5e0f102892d947f787f8f47ee500f564e7fdb50c4d1c4789c", [:mix], [{:nerves, "~> 1.0-rc", [hex: :nerves, optional: false]}]},
+  "nerves_toolchain_x86_64_unknown_linux_gnu": {:hex, :nerves_toolchain_x86_64_unknown_linux_gnu, "1.0.0-rc.0", "885b813d416ca9428b81def8a45c6abdb16618ec3a87351f7964e297064d2f7d", [:mix], [{:nerves, "~> 1.0-rc", [hex: :nerves, repo: "hexpm", optional: false]}, {:nerves_toolchain_ctng, "~> 1.4-rc", [hex: :nerves_toolchain_ctng, repo: "hexpm", optional: false]}], "hexpm"},
   "nerves_toolchain_x86_64_unknown_linux_musl": {:hex, :nerves_toolchain_x86_64_unknown_linux_musl, "1.0.0-rc.0", "b1bc6c8f3f519ea29ccd3bf2c5be7d295be31eb9b7d08553398ce90698c78358", [:mix], [{:nerves, "~> 1.0-rc", [hex: :nerves, optional: false]}, {:nerves_toolchain_ctng, "~> 1.4-rc", [hex: :nerves_toolchain_ctng, optional: false]}]},
 }
