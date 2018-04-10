@@ -61,7 +61,8 @@ defmodule Example.MixProject do
       {:nerves_runtime, "~> 0.4"},
       {:nerves_network, "~> 0.3"},
       {:nerves_firmware_ssh, "~> 0.2"},
-      {:nerves_runtime_shell, "~> 0.1.0"}
+      {:nerves_runtime_shell, "~> 0.1.0"},
+      {:muontrap, "~> 0.2"}
     ] ++ system(target)
   end
 
