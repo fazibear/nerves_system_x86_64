@@ -3,16 +3,17 @@ defmodule Example do
   Documentation for Example.
   """
 
-  @doc """
-  Hello world.
+  def init do
+  end
 
-  ## Examples
+  def startx do
+    spawn(fn -> MuonTrap.cmd("X", []) end)
+    |> Process.register(Xorg)
+    System.put_env("DISPLAY", ":0")
+  end
 
-      iex> Example.hello
-      :world
-
-  """
-  def hello do
-    :world
+  def xeyes do
+    spawn(fn -> MuonTrap.cmd("", []) end)
+    |> Process.register(Xeyes)
   end
 end

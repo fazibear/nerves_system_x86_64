@@ -6,6 +6,7 @@ defmodule Example.Application do
   use Application
 
   def start(_type, _args) do
+    Example.init()
     # List all child processes to be supervised
     children = [
       # Starts a worker by calling: Example.Worker.start_link(arg)
