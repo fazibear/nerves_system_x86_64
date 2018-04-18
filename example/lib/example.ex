@@ -4,6 +4,10 @@ defmodule Example do
   """
 
   def init do
+    :os.cmd('udevd -d');
+    :os.cmd('udevadm trigger --type=subsystems --action=add');
+    :os.cmd('udevadm trigger --type=devices --action=add');
+    :os.cmd('udevadm settle --timeout=30');
   end
 
   def startx do
